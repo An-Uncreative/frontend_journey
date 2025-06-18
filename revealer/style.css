@@ -1,0 +1,27 @@
+:root{
+  --spoiler-color: black;
+}
+
+p {
+  line-height: 1.5em;
+} 
+
+.post{
+    background-color: lightgrey;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 294px;
+    margin-inline: auto;
+}
+
+.spoiler {
+  background-color: var(--spoiler-color);
+  color: var(--spoiler-color);
+  transition: background-color 1s ease-in-out;
+  cursor: pointer;
+}
+
+.spoiler:hover {
+  background-color: transparent;
+}
