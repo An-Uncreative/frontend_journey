@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --search-border: #bbb;
+    --search-focus-border: #3a71ca;
+}
+
+.container {
+    margin: 20px;
+    width: 80%;
+    margin-inline: auto;
+    min-width: 320px;
+}
+
+.search-bar {
+    width: 33.3333%;
+    height: 40px;
+    border: 1px solid var(--search-border);
+    border-radius: 5px;
+    padding: 0 5px;
+    font-size: 16px;
+    transition: width 0.5s ease, border-color 0.5s ease;
+}
+
+.search-bar:focus {
+    width: 100%;
+    /* border-color: var(--search-focus-border); */
+    outline: 2px solid var(--search-focus-border);
+}
+
+.search-bar:focus::placeholder {
+   opacity: 0;
+}
+
+label {
+    position: absolute;
+    left: 1000px;
+}
