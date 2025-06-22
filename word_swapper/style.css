@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.changing::after{
+    content: '';
+    /* display: inline-block; */
+    background-color: blue;
+    padding: 10px;
+    color: white;
+    animation: swapword 3s infinite alternate;
+}
+
+@keyframes swapword {
+    0%   { content: "Eating"; }
+    33%  { content: "Coding"; }
+    66%  { content: "Reading"; }
+    100% { content: "Playing"; }
+}
+
+/* .changing{
+    color: transparent;
+    position: relative;
+} */

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: big 3s ease-in-out infinite alternate;
+    background-color: grey;
+    margin: 0 10px;
+}
+
+@keyframes big {
+    0% {
+        transform: scale(1.3); background-color: lightgray;
+    }
+    25% {
+        transform: scale(1); background-color: gray;
+    }
+    50% {
+        transform: scale(1); background-color: gray;
+    }
+    100% {
+        transform: scale(1.3); background-color: lightgray;
+    }
+}

@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.flag{
+    width: 240px;
+    height: 160px;
+    background-color: red;
+    position: relative;
+}
+
+.cross-vertical {
+    position: absolute;
+    width: 32px;
+    height: 96px;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cross-horizontal {
+    position: absolute;
+    width: 96px;
+    height: 32px;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

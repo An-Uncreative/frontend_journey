@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000000;
+    --red: #DE0002;
+    --yellow: #FFCE00;
+    --flag-height: 150px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.flag{
+    height: var(--flag-height);
+    width: calc(var(--flag-height) * 5/3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.first {
+    background-color: var(--black);
+    height: calc(var(--flag-height) / 3);
+}
+
+.second {
+    background-color: var(--red);
+    height: calc(var(--flag-height) / 3);
+}
+
+.third {
+    background-color: var(--yellow);
+    height: calc(var(--flag-height) / 3);
+}
+

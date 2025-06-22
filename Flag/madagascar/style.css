@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #FFFFFF;
+    --red: #FC3E32;
+    --green: #007E39;
+    --flag-height: 150px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.flag {
+    height: var(--flag-height);
+    width: calc(var(--flag-height) * 1.5);
+    background-color: white;
+    display: flex;
+}
+
+.side {
+    height: var(--flag-height);
+    width: calc(var(--flag-height) / 2);
+    background-color: var(--white);
+}
+
+.up{
+    height: calc(var(--flag-height) / 2);
+    width: calc((var(--flag-height) * 1.5) - (var(--flag-height) / 2));
+    background-color: var(--red);
+}
+
+.down{
+    height: calc(var(--flag-height) / 2);
+    width: calc((var(--flag-height) * 1.5) - (var(--flag-height) / 2));
+    background-color: var(--green);
+}
+
+/* .both {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+} */

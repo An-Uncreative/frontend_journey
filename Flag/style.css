@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+:root {
+    --red: #ED2938;
+    --white: #FFF;
+    --blue: #002495;
+    --flag-height: 150px;
+}
+
+.flag {
+    width: calc(var(--flag-height) * 1.5);
+    height: var(--flag-height);
+    /* background: var(--blue); */
+    display: flex;
+    background: linear-gradient(to bottom, #ff0000 33%, #ffffff 33% 66%, #0000ff 66%);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25); /* This adds the shadow */
+}
+
+.first {
+    width: calc(var(--flag-height) * 0.5);
+    height: var(--flag-height);
+    background: var(--blue);
+}
+
+.second {
+    width: calc(var(--flag-height) * 0.5);
+    height: var(--flag-height);
+    background: var(--white);
+}
+.third {
+    width: calc(var(--flag-height) * 0.5);
+    height: var(--flag-height);
+    background: var(--red);
+}
+
