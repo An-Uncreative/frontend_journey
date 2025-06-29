@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    height: 200px;
+    width: calc(2/3 * 200px);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    display: grid;
+    padding: .5em;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}   
+
+.bottom{
+    transform: rotate(180deg);
+}
